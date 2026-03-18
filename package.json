@@ -17,6 +17,14 @@
   "publishConfig": {
     "access": "public"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/windht/skills-as-mcp.git"
+  },
+  "homepage": "https://github.com/windht/skills-as-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/windht/skills-as-mcp/issues"
+  },
   "files": [
     "dist",
     "README.md",
