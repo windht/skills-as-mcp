@@ -12,7 +12,7 @@ but built for the TypeScript ecosystem and aligned with the official
 
 - Recursively discovers `SKILL.md` files from one or many skill roots
 - Parses YAML frontmatter for `name` and `description`
-- Exposes three Python-compatible tools:
+- Exposes three core MCP tools:
   - `get_available_skills`
   - `get_skill_details`
   - `get_skill_related_file`
@@ -217,15 +217,6 @@ Useful commands:
 - `npm run dev -- --skills-dir ./examples/skills --type stdio`
 - `npm run dev -- --skills-dir ./examples/skills --type http --port 3000`
 - `npm run dev -- --skills-dir ./examples/skills --type sse --port 3000`
-
-## Publishing
-
-The repo includes:
-
-- `CI` workflow for lint, test, and build on pushes and pull requests
-- `Release` workflow that publishes to npm on `v*` tags
-
-To publish from GitHub Actions, set `NPM_TOKEN` in repository secrets.
 
 ## Notes
 
