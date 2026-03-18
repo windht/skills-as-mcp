@@ -1,6 +1,6 @@
 {
   "name": "skills-as-mcp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Expose Claude-style skills as an MCP server over stdio, Streamable HTTP, or legacy SSE.",
   "type": "module",
   "main": "./dist/index.js",
