@@ -1,7 +1,4 @@
-#!/usr/bin/env node
-
 import { createRequire } from "node:module";
-import { pathToFileURL } from "node:url";
 
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { Command, InvalidArgumentError } from "commander";
@@ -190,17 +187,4 @@ function setupShutdownHooks(onShutdown: () => Promise<void>): void {
 
 function writeStderr(message: string): void {
   process.stderr.write(`${message}\n`);
-}
-
-async function main(): Promise<void> {
-  try {
-    await runCli();
-  } catch (error) {
-    writeStderr(error instanceof Error ? error.message : String(error));
-    process.exit(1);
-  }
-}
-
-if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  void main();
 }

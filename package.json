@@ -6,13 +6,16 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "skills-as-mcp": "./dist/cli.js"
+    "skills-as-mcp": "dist/bin.js"
   },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     }
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "files": [
     "dist",
